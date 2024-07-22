@@ -145,3 +145,10 @@ function LevelMaker.generate(width, height)
             end
         end
     end
+
+    local map = TileMap(width, height)
+    map.tiles = tiles
+    
+    return GameLevel(entities, objects, map)
+    
+end

@@ -13,8 +13,7 @@ end
 
 function StartState:render()
     love.graphics.draw(gTextures['backgrounds'], gFrames['backgrounds'][self.background], 0, 0)
-    love.graphics.draw(gTextures['backgrounds'], gFrames['backgrounds'][self.background], 0,
-        gTextures['backgrounds']:getHeight() / 3 * 2, 0, 1, -1)
+    love.graphics.draw(gTextures['backgrounds'], gFrames['backgrounds'][self.background], 0,gTextures['backgrounds']:getHeight() / 3 * 2, 0, 1, -1)
     self.map:render()
 
     love.graphics.setFont(gFonts['title'])
